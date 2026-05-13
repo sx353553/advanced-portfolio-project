@@ -6,21 +6,20 @@ box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
 }
 
-li {
-    list-style: none;
-}
-
-
-
 #personal-logo {
     height: 50px;
     width: 50px;
  filter: invert(1)   
 }
 
+
 nav {
     display: flex;
-    justify-content: space-between;
-    
+justify-content: space-between;
 }
+
+.nav__link--list {
+    display: flex;
+}
+
 
