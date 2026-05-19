@@ -27,6 +27,10 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+.container {
+    padding: 50px 0;
+}
+
 .click {
     transition: all 300ms ease;
 }
@@ -179,5 +183,9 @@ height: 100px;
 .fa-solid {
    font-size: 20px; 
 }
+
+/* Projects Section */
+
+
 
 
