@@ -215,6 +215,11 @@ height: 100px;
     transform: translateY(-50%);
 }
 
+.project__wrapper:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
 .project__description {
     position: absolute;
     top: 50%;
@@ -224,6 +229,10 @@ height: 100px;
     transition: opacity 300ms, transform 450ms ease;
     color: white;
     max-width: 550px;
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+    opacity: 0.7;
 }
 
 .project__wrapper--bg {
