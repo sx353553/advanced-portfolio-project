@@ -206,13 +206,13 @@ height: 100px;
 .project__wrapper {
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 20px 80px 0 rgb (0,0,0,0.45);
+  box-shadow: 0 20px 80px 0 rgb (0, 0 ,0 ,0.45);
   overflow: hidden;
 }
 
 .project__wrapper:hover .project__description {
     opacity: 1;
-    transform: translateY(-50);
+    transform: translateY(-50%);
 }
 
 .project__description {
