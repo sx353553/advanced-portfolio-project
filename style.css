@@ -309,7 +309,7 @@ Modal
 
 .modal__para {
     margin-bottom: 12px;
-    line-height: 1.75px;
+    line-height: 1.75;
 }
 
 
