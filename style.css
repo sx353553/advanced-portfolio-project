@@ -36,6 +36,12 @@ input, textarea {
   border-top: none;
   border-left: none;
   border-right: none;
+  height: 40px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .container {
