@@ -1,8 +1,18 @@
-// Template ID: template_xrrxtto
-// Service ID: service_5ct4j2k
-// QuMhvyuhj3nsaupoV
+/// EmailJS SDK
 
 function contact(event) {
     event.preventDefault();
-    console.log("It worked");
+    const loading = document.querySelector(".modal__overlay--loading");
+    const success = document.querySelector(".modal__overlay--success");
+    loading.classList += " modal__overlay--visible";
+    emailjs.sendForm("service_5ct4j2k", "template_xrrxtto", event.target, "QuMhvyuhj3nsaupoV")
+    .then(() => {
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";
+    }).catch(() => {
+        loading.classList.remove("modal__overlay--visible");
+        alert(
+            "The email service is temporarily unavailable. Please contact me directly on my email.rchunt60@gmail.com"
+        );
+    });
 }
