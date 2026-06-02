@@ -280,6 +280,7 @@ Modal
     overflow: hidden;
     display: flex;
     visibility: hidden;
+    z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
   }
 
@@ -296,10 +297,18 @@ Modal
     flex-direction: column;
     justify-content: center;
     position: relative;
+    transition: all 300ms ease-in;
+}
+
+.modal--open .modal__about, 
+.modal--open .modal__contact
+{
+    transition: translateX(0%);
 }
 
 .modal__about {
     background-color: rgb(245, 245, 245);
+    transition: translateX (-110%);
 }
 
 .modal__languages {
@@ -339,6 +348,7 @@ Modal
 .modal__contact {
     background-color: #242424;
     color: white;
+    transition: translateX(110%);
 }
 
 .modal__title {
@@ -387,7 +397,7 @@ Modal
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: -1; 
@@ -409,6 +419,7 @@ Modal
 
 .modal__overlay--visible {
     z-index: 1;
+    display: flex;
 }
 
 .fa-spinner {
