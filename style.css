@@ -303,12 +303,12 @@ Modal
 .modal--open .modal__about, 
 .modal--open .modal__contact
 {
-    transition: translateX(0%);
+    transform: translateX(0%);
 }
 
 .modal__about {
     background-color: rgb(245, 245, 245);
-    transition: translateX (-110%);
+    transform: translateX(-110%);
 }
 
 .modal__languages {
@@ -348,7 +348,7 @@ Modal
 .modal__contact {
     background-color: #242424;
     color: white;
-    transition: translateX(110%);
+    transform: translateX(110%);
 }
 
 .modal__title {
