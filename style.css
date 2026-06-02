@@ -125,6 +125,22 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 80ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
 /*
 
 Landing Page

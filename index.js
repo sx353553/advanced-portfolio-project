@@ -12,7 +12,7 @@ function contact(event) {
     }).catch(() => {
         loading.classList.remove("modal__overlay--visible");
         alert(
-            "The email service is temporarily unavailable. Please contact me directly on my email.rchunt60@gmail.com"
+            "The email service is temporarily unavailable. Please contact me directly on my     email.rchunt60@gmail.com"
         );
     });
 } 
