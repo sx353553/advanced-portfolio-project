@@ -15,4 +15,13 @@ function contact(event) {
             "The email service is temporarily unavailable. Please contact me directly on my email.rchunt60@gmail.com"
         );
     });
+} 
+let isModalOpen = false;
+function toggleModal() { 
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove(" modal--open");
+    }
+      isModalOpen =true; 
+   document.body.classList += " modal--open";
 }
